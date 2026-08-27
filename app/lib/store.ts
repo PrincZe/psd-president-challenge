@@ -1,11 +1,17 @@
-import { kv } from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 import fs from "fs";
 import path from "path";
 
 const LOCAL_FILE = path.join(process.cwd(), "confirmations.json");
 
-function isVercelKV(): boolean {
-  return !!process.env.KV_REST_API_URL;
+function getRedis(): Redis | null {
+  if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
+    return new Redis({
+      url: process.env.KV_REST_API_URL,
+      token: process.env.KV_REST_API_TOKEN,
+    });
+  }
+  return null;
 }
 
 function readLocal(): Record<string, string[]> {
@@ -21,8 +27,9 @@ function writeLocal(data: Record<string, string[]>) {
 }
 
 export async function getConfirmations(email: string): Promise<string[]> {
-  if (isVercelKV()) {
-    return (await kv.get<string[]>(`confirmations:${email}`)) || [];
+  const redis = getRedis();
+  if (redis) {
+    return (await redis.get<string[]>(`confirmations:${email}`)) || [];
   }
   const data = readLocal();
   return data[email] || [];
@@ -32,12 +39,13 @@ export async function confirmItem(
   email: string,
   item: string
 ): Promise<string[]> {
-  if (isVercelKV()) {
+  const redis = getRedis();
+  if (redis) {
     const current =
-      (await kv.get<string[]>(`confirmations:${email}`)) || [];
+      (await redis.get<string[]>(`confirmations:${email}`)) || [];
     if (!current.includes(item)) {
       current.push(item);
-      await kv.set(`confirmations:${email}`, current);
+      await redis.set(`confirmations:${email}`, current);
     }
     return current;
   }
@@ -51,12 +59,13 @@ export async function confirmItem(
 export async function getAllConfirmations(): Promise<
   Record<string, string[]>
 > {
-  if (isVercelKV()) {
-    const keys = await kv.keys("confirmations:*");
+  const redis = getRedis();
+  if (redis) {
+    const keys = await redis.keys("confirmations:*");
     const result: Record<string, string[]> = {};
     for (const key of keys) {
       const email = key.replace("confirmations:", "");
-      result[email] = (await kv.get<string[]>(key)) || [];
+      result[email] = (await redis.get<string[]>(key)) || [];
     }
     return result;
   }
