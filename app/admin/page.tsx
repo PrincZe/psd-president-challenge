@@ -92,6 +92,7 @@ export default function AdminPage() {
                 <th className="text-left px-3 py-2">Cluster</th>
                 <th className="text-left px-3 py-2">Items</th>
                 <th className="text-left px-3 py-2">Status</th>
+                <th className="text-left px-3 py-2"></th>
               </tr>
             </thead>
             <tbody>
@@ -121,6 +122,28 @@ export default function AdminPage() {
                       <span className="text-green-600 font-medium">Done</span>
                     ) : (
                       <span className="text-yellow-600">Pending</span>
+                    )}
+                  </td>
+                  <td className="px-3 py-2">
+                    {row.confirmed.length > 0 && (
+                      <button
+                        onClick={async () => {
+                          if (!confirm(`Reset confirmations for ${row.name}?`)) return;
+                          await fetch("/api/admin/reset", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ password, email: row.email }),
+                          });
+                          setData(data.map((d) =>
+                            d.id === row.id
+                              ? { ...d, confirmed: [], allConfirmed: false }
+                              : d
+                          ));
+                        }}
+                        className="text-red-500 hover:text-red-700 text-xs"
+                      >
+                        Reset
+                      </button>
                     )}
                   </td>
                 </tr>
