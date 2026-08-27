@@ -57,14 +57,32 @@ export default function AdminPage() {
   const totalOrders = data.length;
   const fullyConfirmed = data.filter((d) => d.allConfirmed).length;
 
+  const resetAll = async () => {
+    if (!confirm("Reset ALL confirmations? This cannot be undone.")) return;
+    await fetch("/api/admin/reset", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password }),
+    });
+    setData(data.map((d) => ({ ...d, confirmed: [], allConfirmed: false })));
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 p-4">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-lg font-bold">Receipt Confirmations</h1>
-          <span className="text-sm text-gray-500">
-            {fullyConfirmed}/{totalOrders} fully confirmed
-          </span>
+          <div>
+            <h1 className="text-lg font-bold">Receipt Confirmations</h1>
+            <span className="text-sm text-gray-500">
+              {fullyConfirmed}/{totalOrders} fully confirmed
+            </span>
+          </div>
+          <button
+            onClick={resetAll}
+            className="bg-red-500 text-white text-xs px-3 py-1.5 rounded-md hover:bg-red-600"
+          >
+            Reset All
+          </button>
         </div>
         <div className="bg-white rounded-lg shadow overflow-x-auto">
           <table className="w-full text-sm">
