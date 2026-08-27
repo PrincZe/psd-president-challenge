@@ -67,7 +67,7 @@ export default function Home() {
     <main className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="bg-white rounded-lg shadow-md p-6">
-          <h1 className="text-xl font-bold text-center mb-1">
+          <h1 className="text-xl font-bold text-center mb-1 text-blue-700">
             PSD ITC President&apos;s Challenge
           </h1>
           <p className="text-sm text-gray-500 text-center mb-6">
