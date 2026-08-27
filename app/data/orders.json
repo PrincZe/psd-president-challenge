@@ -1,0 +1,261 @@
+[
+  {
+    "id": 1,
+    "email": "evelyn_susan_lek@psd.gov.sg",
+    "name": "Evelyn Susan LEK",
+    "cluster": "IT",
+    "items": { "Briyani $10": 1, "Fortune Bag $7": 3, "Fortune Cookie $5": 1 }
+  },
+  {
+    "id": 2,
+    "email": "brayan_cutinha@psd.gov.sg",
+    "name": "Brayan Cutinha",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1, "Fortune Bag $7": 1, "Fortune Cookie $5": 1, "Kimchi $10": 2 }
+  },
+  {
+    "id": 3,
+    "email": "jasmine_richard@psd.gov.sg",
+    "name": "Jasmine Richard",
+    "cluster": "WD",
+    "items": { "Briyani $10": 1 }
+  },
+  {
+    "id": 4,
+    "email": "kamisah_hassan@psd.gov.sg",
+    "name": "DS Jamie",
+    "cluster": "DS office",
+    "items": { "Flowers": 2 }
+  },
+  {
+    "id": 5,
+    "email": "leong_mei_san@psd.gov.sg",
+    "name": "Leong Mei San",
+    "cluster": "ITC",
+    "items": { "Fortune Bag $7": 8 }
+  },
+  {
+    "id": 6,
+    "email": "pearl_chong@psd.gov.sg",
+    "name": "Pearl Chong",
+    "cluster": "PCG",
+    "items": { "Briyani $10": 1 }
+  },
+  {
+    "id": 7,
+    "email": "gerald_chua@tech.gov.sg",
+    "name": "Gerald Chua",
+    "cluster": "ITC",
+    "items": { "Kimchi $10": 2 }
+  },
+  {
+    "id": 8,
+    "email": "teu_lee_koon@psd.gov.sg",
+    "name": "Teu Lee Koon",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 5 }
+  },
+  {
+    "id": 9,
+    "email": "richard_chua@psd.gov.sg",
+    "name": "Richard Chua",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1, "Kimchi $10": 1 }
+  },
+  {
+    "id": 10,
+    "email": "davidson_sim@psd.gov.sg",
+    "name": "Davidson Sim",
+    "cluster": "HRPS",
+    "items": { "Briyani $10": 1 }
+  },
+  {
+    "id": 11,
+    "email": "daryll_chu@psd.gov.sg",
+    "name": "Daryll Chu",
+    "cluster": "ITC",
+    "items": { "Fortune Bag $7": 15 }
+  },
+  {
+    "id": 12,
+    "email": "cortez_carlos_pena@psd.gov.sg",
+    "name": "Cortez Carlos Pena",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1 }
+  },
+  {
+    "id": 13,
+    "email": "vasudeva_rao_gembali_from.tp@psd.gov.sg",
+    "name": "VASUDEVA G",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1 }
+  },
+  {
+    "id": 14,
+    "email": "travis_lee@tech.gov.sg",
+    "name": "Travis Lee",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1, "Fortune Bag $7": 1, "Fortune Cookie $5": 1, "Kimchi $10": 4, "Bracelet": 1 }
+  },
+  {
+    "id": 15,
+    "email": "hannah_tan_from.tp@psd.gov.sg",
+    "name": "Hannah Tan",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1, "Kimchi $10": 1 }
+  },
+  {
+    "id": 16,
+    "email": "yasmine_ow@psd.gov.sg",
+    "name": "Yasmine Ow",
+    "cluster": "SPR",
+    "items": { "Kimchi $10": 1 }
+  },
+  {
+    "id": 17,
+    "email": "jacqueline_koh@psd.gov.sg",
+    "name": "Jacqueline Koh",
+    "cluster": "SPR",
+    "items": { "Kimchi $10": 1 }
+  },
+  {
+    "id": 18,
+    "email": "viviana_tan@psd.gov.sg",
+    "name": "Viviana Tan",
+    "cluster": "LDS",
+    "items": { "Briyani $10": 2 }
+  },
+  {
+    "id": 19,
+    "email": "law_wai_chun@psd.gov.sg",
+    "name": "Law Wai Chun",
+    "cluster": "HRPS",
+    "items": { "Briyani $10": 1 }
+  },
+  {
+    "id": 20,
+    "email": "low_sok_loon@psd.gov.sg",
+    "name": "Low Sok Loon",
+    "cluster": "PCG",
+    "items": { "Briyani $10": 2 }
+  },
+  {
+    "id": 24,
+    "email": "yeo_ching_ying@agd.gov.sg",
+    "name": "Yeo Ching Ying",
+    "cluster": "CS",
+    "items": { "Kimchi $10": 1 }
+  },
+  {
+    "id": 25,
+    "email": "chan_wai_mun@psd.gov.sg",
+    "name": "Chan Wai Mun",
+    "cluster": "Cumulus",
+    "items": { "Briyani $10": 1 }
+  },
+  {
+    "id": 26,
+    "email": "pang_wen_jie@psd.gov.sg",
+    "name": "Pang Wen Jie",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1, "Fortune Bag $7": 1, "Kimchi $10": 1 }
+  },
+  {
+    "id": 27,
+    "email": "han_hwee_ping@psd.gov.sg",
+    "name": "Han Hwee Ping",
+    "cluster": "ITC",
+    "items": { "Fortune Cookie $5": 10, "Kimchi $10": 1 }
+  },
+  {
+    "id": 28,
+    "email": "danny_husada@tech.gov.sg",
+    "name": "Danny Husada",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 15 }
+  },
+  {
+    "id": 29,
+    "email": "jeanette_khong@psd.gov.sg",
+    "name": "Jeanette Khong",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 10, "Bracelet": 2 }
+  },
+  {
+    "id": 31,
+    "email": "victor_ong@psd.gov.sg",
+    "name": "Victor Ong",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 4, "Kimchi $10": 1, "Bracelet": 1 }
+  },
+  {
+    "id": 32,
+    "email": "trixie_chen@psd.gov.sg",
+    "name": "Trixie Chen",
+    "cluster": "ITC",
+    "items": { "Bracelet": 1 }
+  },
+  {
+    "id": 33,
+    "email": "vincent_kwok@psd.gov.sg",
+    "name": "Vincent Kwok",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 10 }
+  },
+  {
+    "id": 34,
+    "email": "chung_xiu_pei@psd.gov.sg",
+    "name": "Chung Xiu Pei",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1, "Fortune Bag $7": 1, "Bracelet": 1 }
+  },
+  {
+    "id": 35,
+    "email": "angie_tan@psd.gov.sg",
+    "name": "Angie Tan",
+    "cluster": "ITC",
+    "items": { "Kimchi $10": 1 }
+  },
+  {
+    "id": 36,
+    "email": "poh_boon_cheong@psd.gov.sg",
+    "name": "Poh Boon Cheong",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1, "Kimchi $10": 1 }
+  },
+  {
+    "id": 37,
+    "email": "koh_kai_li@psd.gov.sg",
+    "name": "Koh Kai Li",
+    "cluster": "PCG",
+    "items": { "Briyani $10": 1 }
+  },
+  {
+    "id": 39,
+    "email": "crystal_chan@psd.gov.sg",
+    "name": "Crystal Chan",
+    "cluster": "SP",
+    "items": { "Briyani $10": 1, "Fortune Bag $7": 5 }
+  },
+  {
+    "id": 40,
+    "email": "kok_kah_chee@psd.gov.sg",
+    "name": "Kok Kah Chee",
+    "cluster": "ITC",
+    "items": { "Fortune Bag $7": 1 }
+  },
+  {
+    "id": 41,
+    "email": "nizam_rahman@tech.gov.sg",
+    "name": "Nizam Bin Abdul Rahman",
+    "cluster": "ITC",
+    "items": { "Briyani $10": 1 }
+  },
+  {
+    "id": 42,
+    "email": "sharon_cy_wong@psd.gov.sg",
+    "name": "Sharon CY Wong",
+    "cluster": "CHROO",
+    "items": { "Bracelet": 2 }
+  }
+]
