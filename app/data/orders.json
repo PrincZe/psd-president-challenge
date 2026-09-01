@@ -4,7 +4,7 @@
     "email": "evelyn_susan_lek@psd.gov.sg",
     "name": "Evelyn Susan LEK",
     "cluster": "IT",
-    "items": { "Briyani $10": 1, "Fortune Bag $7": 3, "Fortune Cookie $5": 1 }
+    "items": { "Briyani $10": 1, "Fortune Bag $7": 3, "Fortune Cookie $5": 1, "Bracelet": 1 }
   },
   {
     "id": 2,
@@ -32,7 +32,7 @@
     "email": "leong_mei_san@psd.gov.sg",
     "name": "Leong Mei San",
     "cluster": "ITC",
-    "items": { "Fortune Bag $7": 8 }
+    "items": { "Fortune Bag $7": 8, "Bracelet": 2 }
   },
   {
     "id": 6,
@@ -53,7 +53,7 @@
     "email": "teu_lee_koon@psd.gov.sg",
     "name": "Teu Lee Koon",
     "cluster": "ITC",
-    "items": { "Briyani $10": 5 }
+    "items": { "Briyani $10": 5, "Bracelet": 2 }
   },
   {
     "id": 9,
@@ -235,7 +235,7 @@
     "email": "crystal_chan@psd.gov.sg",
     "name": "Crystal Chan",
     "cluster": "SP",
-    "items": { "Briyani $10": 1, "Fortune Bag $7": 5 }
+    "items": { "Briyani $10": 1, "Fortune Bag $7": 5, "Bracelet": 1 }
   },
   {
     "id": 40,
@@ -257,5 +257,33 @@
     "name": "Sharon CY Wong",
     "cluster": "CHROO",
     "items": { "Bracelet": 2 }
+  },
+  {
+    "id": 43,
+    "email": "xiu_xiu_tan@psd.gov.sg",
+    "name": "Xiu Xiu Tan",
+    "cluster": "ITC",
+    "items": { "Bracelet": 1 }
+  },
+  {
+    "id": 44,
+    "email": "andrea_kow@psd.gov.sg",
+    "name": "Andrew Kow",
+    "cluster": "PST",
+    "items": { "Bracelet": 2 }
+  },
+  {
+    "id": 45,
+    "email": "tee_zhi_yu@psd.gov.sg",
+    "name": "Zhi Yu Tee",
+    "cluster": "HRP",
+    "items": { "Bracelet": 1 }
+  },
+  {
+    "id": 47,
+    "email": "damien_tye@psd.gov.sg",
+    "name": "Damien Tye",
+    "cluster": "ITC",
+    "items": { "Bracelet": 3 }
   }
 ]
